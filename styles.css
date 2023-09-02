@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;0,900;1,700;1,800&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;0,900;1,700;1,800&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap');
+
+
+*{
+  font-family: 'Fraunces', serif, 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(30, 38%, 92%);
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: repeat(1, 450px);
+  background-color: white;
+  border-radius: 13px;
+}
+
+picture img{
+  display: block;
+  max-width: 100%;
+}
+
+.left-grid img{
+  width: 100%;
+  border-radius: 13px 0 0 13px;
+}
+
+.right-grid{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+  padding: 32px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color:rgb(108, 114, 137);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 500;
+  line-height: 22.1px;
+}
+
+.name {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color:rgb(28, 35, 43);
+}
+
+.details {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgb(108, 114, 137);
+  line-height: 23.8px;
+}
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bigletter {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+.small {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration-line: line-through;
+  font-size: 14px;
+  align-self: center;
+  color: rgb(108, 114, 137);
+}
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  transition: 0.15s;
+  
+}
+button img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+button:hover{
+  background-color: hsl(158, 40%, 20%);
+  color: white;
+}
+
+
+@media screen and (max-width: 475px) {
+  .body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 34vh 50vh;
+    grid-template-columns: repeat(1 , 90vw);
+  }
+  .left-grid{
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+  }
+  .product__img .perfume2 {
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 30vh 50vh;
+    grid-template-columns: repeat(1 , 90vw);
+  }
+  .left-grid{
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+  }
+  .product__img .perfume2 {
+    border-radius: 12px 12px 0px 0px;
+  }
+  .right-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    padding: 10px 32px 10px 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 27vh 50vh;
+    grid-template-columns: repeat(1 , 90vw);
+    
+  }
+  .left-grid{
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+  }
+  .product__img .perfume2 {
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+  .details{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
